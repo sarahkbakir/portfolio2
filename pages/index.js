@@ -15,7 +15,7 @@ export default function Home ({ allPostsData }) {
       </Head>
       <About />
       <section className={utilStyles.headingMd}>
-        <p>Hallo, I'm Sarah. I'm a front end developer! I'm an artist who loves spreading good vibes too. Colors mean the world to me. {<br/>}
+        <p>Hallo, I'm Sarah. I'm a front end developer! I'm an artist who loves spreading good vibes too.{<br/>}
         Notes: {<br/>}
         1. Don't forget to link your contacts here and use 'Link' component 'next/Link'. {<br/>}
         2. Your real picture {<br/>}
