@@ -4,6 +4,8 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    color: black;
+
   }
   
   .headingXl {
@@ -12,12 +14,14 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    color: rgb(31, 126, 102);
   }
   
   .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
+    color: rgb(0, 0, 0);
   }
   
   .headingMd {
@@ -30,7 +34,8 @@
   }
   
   .colorInherit {
-    color: inherit;
+    color: rgb(31, 126, 102);
+
   }
   
   .padding1px {
@@ -43,10 +48,13 @@
     margin: 0;
   }
   
-  .listItem {
+  .listItem a {
     margin: 0 0 1.25rem;
+    color: rgb(211, 77, 28);
+
   }
   
   .lightText {
-    color: #666;
+    color: rgb(109, 136, 129);
+
   }

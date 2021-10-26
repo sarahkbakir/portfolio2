@@ -1,6 +1,7 @@
 ---
 title: 'CodeCademy'
-date: '2021-09-07'
+date: '2021-03-17'
+skills: 'Javascript CSS3'
 ---
 
 ## Responsive Web Design:
