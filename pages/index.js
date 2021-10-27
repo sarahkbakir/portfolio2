@@ -1,59 +1,58 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import Contact from './Contact';
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-export default function Home ({ allPostsData }) {
-  
+export default function Home({}) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hallo, I'm Sarah. I'm a front end developer! I'm an artist who loves spreading good vibes too. You will find skills I learned with each course I achieved and a post about how I started my <strong>Front-End Development</strong> journey from scratch. {<br/>}
-         </p>
+        <p>
+          Hallo, I'm Sarah. I'm a front end developer! I'm an artist who loves
+          spreading good vibes too. You will find skills I learned with each
+          course I achieved and a post about how I started my{" "}
+          <strong>Front-End Development</strong> journey from scratch. {<br />}
+        </p>
+      </section>
 
-      </section>
+      {/* blog section */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Projects, Skills and certificates :</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, skills }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              {skills}{<br/>}
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
-        </ul>
+        <Link href="/blog">
+          <a>
+            <h2 className={utilStyles.headingLg}>Blog</h2>
+          </a>
+        </Link>
       </section>
+
+      {/* Skilss section */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <Link href="/skills">
+          <a>
+            <h2 className={utilStyles.headingLg}>Skills</h2>
+          </a>
+        </Link>
+      </section>
+
+      {/* certificates and projects section */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <Link href="/certificates">
+          <a>
+            <h2 className={utilStyles.headingLg}>Certificates and Projects</h2>
+          </a>
+        </Link>
+      </section>
+
+      {/* contact section */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <Link href="/Contact">
-
-        <a>
-        <h2 className={utilStyles.headingLg}>
-          Contact and Profiles
-        </h2>
+          <a>
+            <h2 className={utilStyles.headingLg}>Contact and Profiles</h2>
           </a>
-      </Link>
+        </Link>
       </section>
     </Layout>
-  )
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
+  );
 }

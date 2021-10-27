@@ -5,7 +5,7 @@ skills: 'Javascript CSS3'
 ---
 
 ## Responsive Web Design:
-I've practiced **Javascript** and **CSS3** by submiting at least 12 mini project throu each course.
+I've practiced **Javascript** and **CSS3** by submiting at least 12 mini project through each course.
 
  - Certificate:
     - [Learn javascript](https://www.codecademy.com/profiles/Sarahktb/certificates/705dcb15de0da4dd9d9fc4f3274b430e)

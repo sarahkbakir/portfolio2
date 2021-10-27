@@ -21,6 +21,7 @@ There are some resources that helped me and others I knew about later but still 
      * [FreeCodeCamp channel](https://www.youtube.com/c/Freecodecamp/videos)
      * [Learn Javascript Online](https://learnjavascript.online/)
      * [W3Schools](https://www.w3schools.com/js/default.asp)
+     * [The Path to learn Javascript](https://www.yonisfy.com/my-path-to-learn/path/javascript)
 
    - **CSS3** :
      * [Mozzilla MDN CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
@@ -34,6 +35,21 @@ There are some resources that helped me and others I knew about later but still 
       * [Mozzilla MDN HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
       * [W3Schools](https://www.w3schools.com/html/)
       * [HTML.com](https://html.com/html5/)
+
+    - **React** :
+      * [Reactjs](https://reactjs.org/)
+      * [React-Router](https://reactrouter.com/)
+      * [W3Schools React tutorial](https://www.w3schools.com/REACT/DEFAULT.ASP)
+      * [FreeCodeCamp tutorial](https://www.freecodecamp.org/news/learn-react-js-in-this-free-7-hour-course/)
+
+    - **Redux** :
+      * [Redux.js.org](https://redux.js.org/)
+      * [Programming with Mosh-Redux tutorial](https://www.youtube.com/watch?v=poQXNp9ItL4)
+      
+    - **Node.js** :
+      * [Nodejs.org](https://nodejs.org/en/docs/guides/)
+
+
     - **Books** :
       * The Road To React 
         * _*very helpful, informative and easy to follow*_
