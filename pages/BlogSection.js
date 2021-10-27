@@ -6,10 +6,10 @@ import Link from 'next/link'
 import Date from '../components/date'
 
 
-export default function certificates ({ allPostsData }) {
+export default function BlogSection ({ allPostsData }) {
 
     return (
-        <Layout certificates>
+        <Layout BlogSection>
   
           <section className={utilStyles.headingMd}>
             <p>Hallo again, You will find skills I learned, projects I did, a post about how I started my <strong>Front-End Development</strong> journey from scratch and some useful resources. {<br/>} 

@@ -19,13 +19,13 @@ export default function Home({}) {
       </section>
 
       {/* blog section */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <Link href="/blog">
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <Link href="/BlogSection">
           <a>
             <h2 className={utilStyles.headingLg}>Blog</h2>
           </a>
         </Link>
-      </section>
+      </section> */}
 
       {/* Skilss section */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
