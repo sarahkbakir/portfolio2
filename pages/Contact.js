@@ -1,32 +1,34 @@
-import Layout from "../components/layout"
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Layout from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
 export default function Contact() {
-    let profiles = ['Linkedin', 'Github', 'CodeWars' , 'Codeforces' , 'Hackerrank' ]
-    let profileLinks = ['https://www.linkedin.com/in/sarahbakir-k/', 'https://github.com/sarahkbakir' , 'https://www.codewars.com/users/sarahkbakir' , 'https://codeforces.com/profile/suekb' , 'https://www.hackerrank.com/sarahbakir_k?hr_r=1']
-    return (
-        <Layout Contact>
-    
-    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        Hey there ! thats the new component linked I made while learning next.js!
-        this is the contact page
-        <h2 className={utilStyles.headingLg}>Contacts and Profiles</h2>
-        <h3 className={utilStyles.headingMd}>Profiles :</h3>
+  let profiles = ["Linkedin", "Github", "CodeWars", "Codeforces", "Hackerrank"];
+  let profileLinks = [
+    "https://www.linkedin.com/in/sarahbakir-k/",
+    "https://github.com/sarahkbakir",
+    "https://www.codewars.com/users/sarahkbakir",
+    "https://codeforces.com/profile/suekb",
+    "https://www.hackerrank.com/sarahbakir_k?hr_r=1",
+  ];
+  return (
+    <Layout Contact>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Contact</h2>
+        <p>
+          You can contact me on linkedin, Email me @ Sarahbakir.k@gmail.com, or
+          just follow me and lets get in touch!
+        </p>
         <ul className={utilStyles.list}>
-            {profiles.map((profile) => (
-
-                <li className={utilStyles.listItem} key={profiles.indexOf({profile})} passHref={true}>
-                    <Link href={profileLinks[profiles.indexOf({profile})]}target="_blank" >
-                    {profile}
-
-                    </Link>
-                </li>
-                ))
-            }
+          {profiles.map((profile, index) => (
+            <li className={utilStyles.listItem} key={index}>
+              <a href={profileLinks[index]} passHref={true}>
+                {profile}
+              </a>
+            </li>
+          ))}
         </ul>
-    </section>
-    </Layout >
-        )
-  }
-  
+      </section>
+    </Layout>
+  );
+}
