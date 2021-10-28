@@ -23,7 +23,6 @@ export default function Blog ({ allData }) {
                 <li className={utilStyles.listItem} key={id}>
                 <Link href={`/blog/${id}`}>
                   <a>{title}</a>
-                  <a href=''>←Back</a>
                 </Link>
                 <br />
                 <small className={utilStyles.lightText}>
