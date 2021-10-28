@@ -1,12 +1,11 @@
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import Contact from './Contact';
-import { getSortedPostsData } from '../lib/blog'
+import { getSortedBlogData } from '../lib/blog'
 import Link from 'next/link'
 import Date from '../components/date'
 
 
-export default function BlogSection ({ allPostsData }) {
+export default function Blog ({ allData }) {
 
     return (
         <Layout BlogSection>
@@ -20,10 +19,11 @@ export default function BlogSection ({ allPostsData }) {
             <h2 className={utilStyles.headingLg}>Projects, Skills and certificates :</h2>
             
             <ul className={utilStyles.list}>
-              {allPostsData.map(({ id, date, title }) => (
+              {allData.map(({ id, date, title }) => (
                 <li className={utilStyles.listItem} key={id}>
-                <Link href={`/posts/${id}`}>
+                <Link href={`/blog/${id}`}>
                   <a>{title}</a>
+                  <a href=''>←Back</a>
                 </Link>
                 <br />
                 <small className={utilStyles.lightText}>
@@ -47,10 +47,10 @@ export default function BlogSection ({ allPostsData }) {
 
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData()
+    const allData = getSortedBlogData()
     return {
       props: {
-        allPostsData
+        allData
       }
     }
   }

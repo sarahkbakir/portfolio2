@@ -3,9 +3,9 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 export default function Contact() {
-  let profiles = ["Linkedin", "Github", "CodeWars", "Codeforces", "Hackerrank"];
+  let profiles = ["Github", "CodeWars", "Codeforces", "Hackerrank"];
   let profileLinks = [
-    "https://www.linkedin.com/in/sarahbakir-k/",
+    
     "https://github.com/sarahkbakir",
     "https://www.codewars.com/users/sarahkbakir",
     "https://codeforces.com/profile/suekb",
@@ -16,7 +16,7 @@ export default function Contact() {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Contact</h2>
         <p>
-          You can contact me on linkedin, Email me @ Sarahbakir.k@gmail.com, or
+          You can contact me on <a href="https://www.linkedin.com/in/sarahbakir-k/">Linkedin</a>, Email me @ Sarahbakir.k@gmail.com, or
           just follow me and lets get in touch!
         </p>
         <ul className={utilStyles.list}>
