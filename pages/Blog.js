@@ -11,7 +11,7 @@ export default function Blog ({ allData }) {
         <Layout BlogSection>
   
           <section className={utilStyles.headingMd}>
-            <p>Hallo again, You will find skills I learned, projects I did, a post about how I started my <strong>Front-End Development</strong> journey from scratch and some useful resources. {<br/>} 
+            <p>Welcome to my blog, I just did a post about how I started my <strong>Front-End Development</strong> journey from scratch and some useful resources. You will also find more posts coming some are non-technical and some are about a beginner learning experience. {<br/>} 
              </p>
     
           </section>
@@ -35,8 +35,7 @@ export default function Blog ({ allData }) {
             </ul>
           </section>
 
-
-
+  
           </Layout>
   )
 }

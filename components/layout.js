@@ -1,20 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Sarah'
-export const siteTitle = 'Sarah Bakir'
+const name = "Sarah Bakir";
+export const siteTitle = "Sarah Bakir";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
-          content="Sarah bakir's first portfolio trial using next.js"
+          content="Sarah's first portfolio trial using next.js"
         />
         <meta
           property="og:image"
@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.png"
+              src="/images/profile1.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.png"
+                  src="/images/profile1.jpg"
                   className={utilStyles.borderCircle}
                   height={90}
                   width={90}
@@ -52,25 +52,23 @@ export default function Layout({ children, home }) {
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            {/* <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
-        
-        <div className={styles.backToHome}>
-          {<br/>}
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-     
-        </div>
-      )}
+          <div className={styles.backToHome}>
+            {<br />}
+            <Link href="/">
+              <a> Home ↪</a>
+            </Link>
+          </div>
+        )}
     </div>
-  )
+  );
 }

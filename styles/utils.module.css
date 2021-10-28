@@ -31,6 +31,8 @@
   
   .borderCircle {
     border-radius: 9999px;
+    overflow: hidden;
+
   }
   
   .colorInherit {
@@ -55,5 +57,15 @@
   
   .lightText {
     color: rgb(109, 136, 129);
+
+  }
+  .list li:hover {
+    color: rgb(92, 90, 86);
+  }
+.homeContainer{
+  display: flex;
+}
+  .homeContainer section{
+    display: inline;
 
   }

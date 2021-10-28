@@ -3,13 +3,14 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 export default function Contact() {
-  let profiles = ["Github", "CodeWars", "Codeforces", "Hackerrank"];
+  let profiles = ["Github", "CodeWars", "Codeforces", "Hackerrank", "Carbonmade profile", "Wordpress"];
   let profileLinks = [
     
     "https://github.com/sarahkbakir",
     "https://www.codewars.com/users/sarahkbakir",
     "https://codeforces.com/profile/suekb",
     "https://www.hackerrank.com/sarahbakir_k?hr_r=1",
+    'https://suekays.carbonmade.com/', "https://suekays.wordpress.com/"
   ];
   return (
     <Layout Contact>

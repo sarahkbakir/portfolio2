@@ -1,7 +1,7 @@
 ---
 title: 'Learning resources all in one list!'
 date: '2021-10-21'
-skills: 'Javascript React Bootstrap Next.js Material UI'
+skills: 'Links, books and practicing tips'
 ---
 ## Exploring The world of Front end development
 
@@ -65,3 +65,5 @@ I found a couple of lists of **Problem Solving** websites, tried some of them an
    * [Leetcode](https://www.Leetcode.com)   
    * [Hackerrank](https://www.Hackerrank.com)   
    * [Codeforces](https://www.Codeforces.com)
+
+

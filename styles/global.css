@@ -6,7 +6,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(232, 233, 220);
 }
 * {
   box-sizing: border-box;
@@ -26,3 +26,6 @@ img {
   max-height: 100%;
   display: block;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
