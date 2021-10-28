@@ -69,3 +69,14 @@
     display: inline;
 
   }
+  .arrowright {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid rgb(85, 138, 16);
+    display: inline-block;
+  }
+  .arrowright:hover{
+    transform: scale(1.5);
+  }

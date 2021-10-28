@@ -65,7 +65,7 @@ export default function Layout({ children, home }) {
           <div className={styles.backToHome}>
             {<br />}
             <Link href="/">
-              <a> Home ↪</a>
+              <a> Home <div className={utilStyles.arrowright}></div></a>
             </Link>
           </div>
         )}
