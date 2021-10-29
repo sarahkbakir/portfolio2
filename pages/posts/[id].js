@@ -10,6 +10,11 @@ export default function Post({ postData }) {
         <Layout>
         <Head>
           <title>{postData.title}</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+      </link>
         </Head>
         <article>
           <h1 className={utilStyles.headingXl}>{postData.title}</h1>
@@ -20,7 +25,7 @@ export default function Post({ postData }) {
         </article>
           {<br/>}
           <Link href="/certificates">
-            <a>↩ Back </a>
+            <a>Back </a>
           </Link>
       </Layout>
     )

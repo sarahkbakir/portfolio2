@@ -4,7 +4,7 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    color: black;
+    color: rgb(255, 255, 255);
 
   }
   
@@ -21,12 +21,13 @@
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
-    color: rgb(0, 0, 0);
+    color: rgb(153, 140, 140);
   }
   
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
+    color: white;
   }
   
   .borderCircle {
@@ -44,17 +45,18 @@
     padding-top: 1px;
   }
   
-  .list {
+  /* .list {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+    color: white;
+  } */
   
-  .listItem a {
+  /* .listItem a {
     margin: 0 0 1.25rem;
     color: rgb(211, 77, 28);
   }
-  
+   */
   .lightText {
     color: rgb(109, 136, 129);
 
@@ -62,13 +64,15 @@
   .list li:hover {
     color: rgb(92, 90, 86);
   }
-.homeContainer{
-  display: flex;
-}
-  .homeContainer section{
-    display: inline;
-
+  
+  .homeContainer{
+    display: flex;
   }
+    .homeContainer section{
+      display: inline;
+  
+    }
+    /* 
   .arrowright {
     width: 0; 
     height: 0; 
@@ -79,4 +83,4 @@
   }
   .arrowright:hover{
     transform: scale(1.5);
-  }
+  } */

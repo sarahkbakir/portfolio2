@@ -24,7 +24,7 @@ export default function Post({ postData }) {
         
           {<br/>}
           <Link href="/Blog">
-            <a>↩ Back </a>
+            <a>Back </a>
           </Link>
       </Layout>
     )
