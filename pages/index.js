@@ -5,12 +5,15 @@ import Link from "next/link";
 import Card from '../components/Card'
 import Blog from "./Blog";
 
+
 export default function Home({}) {
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+     
       <section className={utilStyles.headingMd}>
         <p>
           Hallo, I'm Sarah. I'm a front end developer! I'm an artist who loves

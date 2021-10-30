@@ -19,14 +19,13 @@ export default function certificates ({ allPostsData }) {
             <h2 className={utilStyles.headingLg}>Projects, Skills and certificates :</h2>
             
             <ul className={utilStyles.list}>
-              {allPostsData.map(({ id, date, title, skills }) => (
+              {allPostsData.map(({ id, date, title }) => (
                 <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>
                 </Link>
                 <br />
                 <small className={utilStyles.lightText}>
-                  {skills}{<br/>}
                   <Date dateString={date} />
                 </small>
                 {<br/>}{<br/>}

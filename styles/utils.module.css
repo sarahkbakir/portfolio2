@@ -4,7 +4,7 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    color: rgb(255, 255, 255);
+    color: rgb(132, 133, 57);
 
   }
   
@@ -21,13 +21,14 @@
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
-    color: rgb(153, 140, 140);
+    color: rgb(211, 0, 0);
   }
   
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
-    color: white;
+    margin: 1rem 0;
+    color: rgb(211, 0, 0);
   }
   
   .borderCircle {
@@ -37,50 +38,37 @@
   }
   
   .colorInherit {
-    color: rgb(31, 126, 102);
+    color: rgb(211, 0, 0);
 
   }
   
   .padding1px {
     padding-top: 1px;
+    text-align: center;
   }
   
-  /* .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: white;
-  } */
-  
-  /* .listItem a {
-    margin: 0 0 1.25rem;
-    color: rgb(211, 77, 28);
-  }
-   */
-  .lightText {
-    color: rgb(109, 136, 129);
-
+  .lightText  {
+    color: rgb(105, 109, 108);
   }
   .list li:hover {
-    color: rgb(92, 90, 86);
+    color: rgba(226, 235, 243, 0.207);
   }
-  
-  .homeContainer{
-    display: flex;
+
+  .arrowleft ,.arrowright{
+    text-align: center;
   }
-    .homeContainer section{
-      display: inline;
-  
-    }
-    /* 
-  .arrowright {
-    width: 0; 
-    height: 0; 
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid rgb(85, 138, 16);
-    display: inline-block;
+
+
+  .footer{
+position: fixed;   
+bottom: 0rem;
+right: 0rem;
+width: 100%;
+background-color: rgba(240, 248, 255, 0.707);
+padding: 0rem;
+}
+
+.footer p {
+  text-align: center;
+  padding: 0.5rem;
   }
-  .arrowright:hover{
-    transform: scale(1.5);
-  } */

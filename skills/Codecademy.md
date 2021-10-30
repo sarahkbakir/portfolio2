@@ -4,7 +4,8 @@ date: '2021-03-17'
 skills: 'Javascript CSS3'
 ---
 
-## Responsive Web Design:
+ -  **Responsive Web Design:**
+
 I've practiced **Javascript** and **CSS3** by submiting at least 12 mini project through each course.
 
  - Certificate:

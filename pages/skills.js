@@ -14,7 +14,7 @@ let skills = ['CSS3', 'HTML5', 'JavaScript', 'React', 'Redux', 'Webpack', 'Boots
                 </p>
             </section>
       <section className={utilStyles.headingMd}>
-      <ul className={utilStyles.list}>
+      <ul className={`${utilStyles.list} ${utilStyles.padding1px}`}>
         {skills.map((skill, index)=> (
             <li className='skill' key={index}>
               {skill}
