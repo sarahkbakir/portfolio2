@@ -1,45 +1,97 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html,
 body {
   padding: 0 1rem 0.5rem 1.5rem;
-  margin: 0;
+  margin: 4rem 20% 1rem 5%;
   font-family: Roboto Mono, monospace;
   line-height: 1.6;
   font-size: 18px;
-  background-color: aliceblue;
-  color: rgb(35, 49, 60);
+  
+}
+body[data-theme="light"]  {
+  background-color: rgb(255, 255, 255);
+  --color-text-primary: #302e2b;
+--color-text-secondary: #2c7e79;
+--color-bg-primary: rgb(252, 255, 67);
+--color-header-primary:#9aa999;
+--color-headers-bg:#351717;
+--color-bg-toggle: #e4eaf0;
+--color-text-brand:#d3ad14;
 
+}
+
+body[data-theme="dark"] {
+  background-color: rgb(4, 3, 3);
+  --color-text-primary: hsl(78, 81%, 94%);
+  --color-text-secondary: rgb(171, 197, 117);
+  --color-bg-primary: rgb(20, 22, 26);
+  --color-header-primary:#839485;
+  --color-headers-bg:#d32525;
+  --color-bg-toggle: #a9a9a9;
+--color-text-brand:#fffdf5;
+
+}
+
+.heading2Xl[data-theme="dark"]{
+color:var(--color-text-brand);
 }
 
 * {
-  box-sizing: border-box;
+   box-sizing: border-box; 
 }
+
+.TypeIt [data-theme="light"]{
+color: var(--color-text-secondary);
+}
+
 
 ul{
   margin-top: 1rem;
+  text-decoration: none;
+  list-style-type: none;
 }
-li {
-  color: rgb(211, 0, 0);
-  margin-bottom: 0.5rem;
 
+ul [data-theme="light"]{
+  color:var(--color-text-secondary);
 }
-li a , li span{
-  color: rgb(80, 79, 100);
+
+ul[data-theme="dark"]{
+color: var(--color-text-primary);
+}
+h1 {
+  color: var(--color-headers-bg);
+}
+.small[data-theme="light"] {
+  color: var(--color-text-primary);
+}
+.small[data-theme="dark"] {
+  color: var(--color-text-primary);
+}
+li{
+  margin-bottom: 0.5rem;
+  color: var(--color-header-primary);
+}
+
+
+li a{
   margin-left: 0.6rem;
   text-align: center;
+  color: var(--color-text-secondary)
 }
+
+
+
 p{
   text-align: justify;
-  color: rgb(35, 49, 60);
   padding: 1rem 0.2rem 1rem 0.2rem;
+  color: var(--color-text-primary);
 }
+
+
 a {
-  color: rgb(99, 97, 95);
   text-decoration: none;
+  color: var(--color-headers-bg);
 }
+
 
 a:hover {
   text-decoration: underline;
@@ -48,5 +100,8 @@ a:hover {
 img {
   max-width: 100%;
   max-height: 100%;
-  display: block;
+  display: inline-block;
+}
+.menu[data-theme="dark"] {
+  color: white;
 }
