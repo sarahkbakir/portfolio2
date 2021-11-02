@@ -3,14 +3,14 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import useDarkMode from "../useDarkMode";
+import ThemeToggle from "../components/ThemeToggle";
+
 
 
 const name = "Sarah Bakir";
 export const siteTitle = "Sarah Bakir";
 
 export default function Layout({ children, home }) {
-  const [colorTheme, setTheme] = useDarkMode();
   
   return (
     <div className={styles.container}>
@@ -29,9 +29,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      {colorTheme === "light" ? (
+      {/* {colorTheme === "light" ? (
   <svg
-    onClick={() => setTheme("light")}
     xmlns="http://www.w3.org/2000/svg"
     className="h-10 w-10 text-indigo-200"
     fill="none"
@@ -47,7 +46,7 @@ export default function Layout({ children, home }) {
   </svg>
 ) : (
   <svg
-    onClick={() => setTheme("dark")}
+    
     xmlns="http://www.w3.org/2000/svg"
     className="h-10 w-10 text-gray-900"
     fill="none"
@@ -61,7 +60,7 @@ export default function Layout({ children, home }) {
       d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
     />
   </svg>
-)}
+)} */}
       <header className={styles.header}>
         {home ? (
           <>
@@ -93,6 +92,8 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
+      <ThemeToggle />
+
       <main>{children}</main>
       <footer className={utilStyles.footer}>
         <p>made with love @ 2021</p>
