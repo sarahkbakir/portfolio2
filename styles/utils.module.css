@@ -4,7 +4,6 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    /* color: rgb(132, 133, 57); */
 
   }
   
@@ -40,6 +39,9 @@
   .colorInherit {
     color: rgb(211, 0, 0);
 
+  }
+  .listItem{
+    margin-left: -1.8rem;
   }
   
   .padding1px {
@@ -114,21 +116,7 @@ padding: -2rem;
     transition: top 2s ease-in-out;
     z-index: 0;
   }
-  .bottomballright{
-    background-color: tomato;
-    position: absolute;
-  width: 10rem;
-  height: 10rem;
-  bottom: -100rem;
-  right: -3rem;
-  border-radius: 50%;
-  z-index: 0;
-  transition: all .2s ease-in-out;
-}
-.bottomballright:hover{
-    transform: scale(0.7,  0.7);
 
-  }
  .bottomball{
   background-color: rgba(135, 181, 62, 0.967);
   width: 10rem;
@@ -158,3 +146,6 @@ padding: -2rem;
     0% { opacity: 0}
     100%   { opacity: 1rem}
   }
+.list{
+  text-align: center;
+}

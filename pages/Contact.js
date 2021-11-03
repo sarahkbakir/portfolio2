@@ -17,7 +17,7 @@ export default function Contact() {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Contact</h2>
         
-        <ul className={utilStyles.list}>
+        <ul >
           {profiles.map((profile, index) => (
             <li className={utilStyles.listItem} key={index}>
               <a href={profileLinks[index]} passHref={true}>

@@ -49,14 +49,19 @@ export default function Layout({ children, home }) {
           </div>
         ) : (
           <div className={utilStyles.heroimage}>
+            {/* <Link href='/hiddenLinks'>
+            <a>
+               */}
                 <Image
                   priority
-                  src="/images/profile1.jpg"
+                  src="/images/profile.png"
                   className={utilStyles.borderCircle}
                   height={70}
                   width={70}
                   alt={name}
-                />
+                  />
+                  {/* </a>
+                  </Link> */}
                 <h3 className={utilStyles.headingXl}>{name}</h3>
           </div>
         )}
@@ -68,7 +73,7 @@ export default function Layout({ children, home }) {
       <footer className={utilStyles.footer}>
         <span>Sarah Bakir 2021</span>
       </footer>
-      <div className={utilStyles.bottomballright}></div>
+      
       {!home && (
           <div className={utilStyles.arrowright}>
             {<br />}

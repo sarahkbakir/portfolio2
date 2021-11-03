@@ -12,7 +12,7 @@ body {
   --color-text-primary: #302e2b;
 --color-text-secondary: rgb(228, 88, 63);
 --color-bg-primary: rgb(252, 255, 67);
---color-header-primary:#999b3d;
+--color-header-primary:#ccce43;
 --color-headers-bg:#351717;
 --color-bg-toggle: #e4eaf0;
 --color-text-brand:#1a1a19;
@@ -23,9 +23,9 @@ body {
 body[data-theme="dark"] {
   background-color: rgb(4, 3, 3);
   --color-text-primary: hsl(78, 81%, 94%);
-  --color-text-secondary: rgb(171, 197, 117);
+  --color-text-secondary: rgb(162, 204, 76);
   --color-bg-primary: rgb(20, 22, 26);
-  --color-header-primary:#d3dc31;
+  --color-header-primary:#ce5b38;
   --color-headers-bg:tomato;
   --color-bg-toggle: #a9a9a9;
   --color-text-brand:#fffdf5;
@@ -82,8 +82,6 @@ li{
 
 
 li a{
-  margin-left: 0.6rem;
-
   text-align: center;
   color: var(--color-text-secondary)
 }
@@ -112,6 +110,6 @@ img {
   max-height: 100%;
   display: inline-block;
 }
-.menu li {
+.menu  a li{
   color: var(--color-text-secondary);
 }

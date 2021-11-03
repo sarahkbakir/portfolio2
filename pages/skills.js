@@ -5,19 +5,15 @@ import Link from 'next/link'
 
 
 export default function Skills () {
-let skills = ['CSS3', 'HTML5', 'JavaScript', 'React', 'Redux', 'Webpack', 'Bootstrap', 'React bootstrap', 'Styled components', 'Node js' ]
+let skills = ['CSS3', 'HTML5', 'JavaScript', 'React', 'Redux', 'Webpack', 'Bootstrap', 'React bootstrap', 'Styled components', 'Node js', 'Next js']
     return (
         <Layout certificates>
-            <section className={utilStyles.headingMd}>
-                <p>
-                    Here are some skills I've been learning lately and I'm still adding to my list everyday!
-                </p>
-            </section>
-      <section className={utilStyles.headingMd}>
-      <ul className={`${utilStyles.list} ${utilStyles.padding1px}`}>
+            
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <ul >
         {skills.map((skill, index)=> (
-            <li className='skill' key={index}>
-              {skill}
+            <li className={utilStyles.listItem} key={index}>
+            {skill}
             </li>
         ))}
       </ul>

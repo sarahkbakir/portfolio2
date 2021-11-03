@@ -12,7 +12,7 @@ export default function certificates ({ allPostsData }) {
   
 
           <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={utilStyles.headingLg}>Projects, Skills and certificates :</h2>
+            <h2 className={utilStyles.headingLg}>Projects</h2>
             
             <ul className={utilStyles.list}>
               {allPostsData.map(({ id, date, title }) => (
