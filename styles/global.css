@@ -1,22 +1,23 @@
 html,
 body {
-  padding: 0 1rem 0.5rem 1.5rem;
-  margin: 4rem 20% 1rem 5%;
+  padding: 0 1rem 0.5rem 10%;
+  margin: 4rem 10% 1rem 5%;
   font-family: Roboto Mono, monospace;
   line-height: 1.6;
   font-size: 18px;
   
 }
-body[data-theme="light"]  {
+body {
   background-color: rgb(255, 255, 255);
   --color-text-primary: #302e2b;
---color-text-secondary: #2c7e79;
+--color-text-secondary: rgb(228, 88, 63);
 --color-bg-primary: rgb(252, 255, 67);
---color-header-primary:#9aa999;
+--color-header-primary:#999b3d;
 --color-headers-bg:#351717;
 --color-bg-toggle: #e4eaf0;
---color-text-brand:#d3ad14;
-
+--color-text-brand:#1a1a19;
+--color-article-title: rgb(40, 60, 55); 
+--color-balls-topright:rgba(255, 255, 255, 0);
 }
 
 body[data-theme="dark"] {
@@ -24,22 +25,32 @@ body[data-theme="dark"] {
   --color-text-primary: hsl(78, 81%, 94%);
   --color-text-secondary: rgb(171, 197, 117);
   --color-bg-primary: rgb(20, 22, 26);
-  --color-header-primary:#839485;
-  --color-headers-bg:#d32525;
+  --color-header-primary:#d3dc31;
+  --color-headers-bg:tomato;
   --color-bg-toggle: #a9a9a9;
---color-text-brand:#fffdf5;
-
+  --color-text-brand:#fffdf5;
+  --color-article-title: rgb(31, 126, 102); 
+  --color-balls-topright:rgba(194, 189, 31, 0.967);
 }
 
-.heading2Xl[data-theme="dark"]{
+
+.heading2Xl{
 color:var(--color-text-brand);
 }
-
+.headingLg{
+  color: var(color-text-brand);
+}
+.headingXl[data-theme="dark"]{
+  color: var(--color-article-title);
+}
+h2{
+  color: var(--color-article-title);
+}
 * {
    box-sizing: border-box; 
 }
 
-.TypeIt [data-theme="light"]{
+.TypeIt {
 color: var(--color-text-secondary);
 }
 
@@ -57,9 +68,7 @@ ul [data-theme="light"]{
 ul[data-theme="dark"]{
 color: var(--color-text-primary);
 }
-h1 {
-  color: var(--color-headers-bg);
-}
+
 .small[data-theme="light"] {
   color: var(--color-text-primary);
 }
@@ -67,13 +76,14 @@ h1 {
   color: var(--color-text-primary);
 }
 li{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   color: var(--color-header-primary);
 }
 
 
 li a{
   margin-left: 0.6rem;
+
   text-align: center;
   color: var(--color-text-secondary)
 }
@@ -102,6 +112,6 @@ img {
   max-height: 100%;
   display: inline-block;
 }
-.menu[data-theme="dark"] {
-  color: white;
+.menu li {
+  color: var(--color-text-secondary);
 }

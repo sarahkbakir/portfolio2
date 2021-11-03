@@ -18,10 +18,7 @@ export default function Home({}) {
            <section className={utilStyles.headingMd}>
         <p>
         <Typing/>
-          {/* Hallo, I'm Sarah. I'm a front end developer! I'm an artist who loves
-          spreading good vibes too. You will find skills I learned with each
-          course I achieved and a post about how I started my{" "}
-          <strong>Front-End Development</strong> journey from scratch in my <strong>blog</strong> section. {<br />} */}
+       
         </p>
       </section>
     </Layout>

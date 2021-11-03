@@ -4,7 +4,7 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    color: rgb(132, 133, 57);
+    /* color: rgb(132, 133, 57); */
 
   }
   
@@ -14,21 +14,21 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    color: rgb(31, 126, 102);
+   
   }
   
   .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
-    color: rgb(211, 0, 0);
+    
   }
   
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 1rem 0;
-    color: rgb(211, 0, 0);
+    /* color: rgb(211, 0, 0); */
   }
   
   .borderCircle {
@@ -50,9 +50,7 @@
   .lightText  {
     color: rgb(105, 109, 108);
   }
-  .list li:hover {
-    color: rgba(226, 235, 243, 0.207);
-  }
+
 
   .arrowleft ,.arrowright{
     text-align: center;
@@ -66,19 +64,97 @@ bottom: 0rem;
 right: 0rem;
 width: 100%;
 background-color: rgba(240, 248, 255, 0.707);
-padding: 0rem;
+margin-top: 2rem;
+padding: -2rem;
 }
 
-.footer p {
+.footer span{
+  margin-left: 47%;
   text-align: center;
-  padding: -0.5rem;
   }
   .svg{
     width: 1rem;
     display: inline;
   }
 
-  .heroimage{
+  .heroimagehome{
     background-color:tomato ;
     padding: 2rem;
+  }
+  
+  .heroimage{
+    background-color:tomato ;
+    padding: 0.5rem;
+    width: 9rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+  }
+  .menu{
+    display: inline-block;
+    margin: 2rem;
+    position: absolute;
+    top: 10rem;
+    background-color:rgb(36, 41, 36) ;
+    padding: 2rem;
+    left: -3rem;
+  }
+  .menu li{
+    text-align: left;
+  }
+  .toprightbanner{
+    background-color: rgba(194, 189, 31, 0.967);
+    width: 20rem;
+    height: 20rem;
+    top: -8rem;
+    right: -4rem;
+    border-radius: 50%;
+    position: absolute;
+    transition: top 2s ease-in-out;
+    z-index: 0;
+  }
+  .bottomballright{
+    background-color: tomato;
+    position: absolute;
+  width: 10rem;
+  height: 10rem;
+  bottom: -100rem;
+  right: -3rem;
+  border-radius: 50%;
+  z-index: 0;
+  transition: all .2s ease-in-out;
+}
+.bottomballright:hover{
+    transform: scale(0.7,  0.7);
+
+  }
+ .bottomball{
+  background-color: rgba(135, 181, 62, 0.967);
+  width: 10rem;
+  height: 10rem;
+  bottom: 0rem;
+  left: -8rem;
+  border-radius: 50%;
+  position: absolute;
+  transition: left 2s ease-in-out;
+  z-index: 0;
+ }
+ .bottomball:hover{
+   left: 5rem;
+ }
+  .toprightbanner:hover {
+    top: -10rem;
+
+  }
+  .borderCirclehome{
+    animation: fadein 5s;
+
+  }
+  .borderCirclehome{
+    animation: fadein 5s;
+  }
+  @keyframes fadein {
+    0% { opacity: 0}
+    100%   { opacity: 1rem}
   }

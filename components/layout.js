@@ -31,13 +31,12 @@ export default function Layout({ children, home }) {
       </Head>
       
       <header className={styles.header}>
-        <span className={utilStyles.toprightbanner}>
-
-        </span>
-
+        {/* <div className={utilStyles.toprightbanner}>
+        </div> */}
       <Menu/>
+
         {home ? (
-          <div className={utilStyles.heroimage}>
+          <div className={utilStyles.heroimagehome}>
             <Image
               priority
               src="/images/profile1.jpg"
@@ -49,9 +48,7 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </div>
         ) : (
-          <div>
-            <Link href="/">
-              <a>
+          <div className={utilStyles.heroimage}>
                 <Image
                   priority
                   src="/images/profile1.jpg"
@@ -60,19 +57,18 @@ export default function Layout({ children, home }) {
                   width={70}
                   alt={name}
                 />
-                <h1 className={utilStyles.heading2Xl}>{name}</h1>
-              </a>
-            </Link>
-
+                <h3 className={utilStyles.headingXl}>{name}</h3>
           </div>
         )}
       </header>
+      <div className={utilStyles.toprightbanner}></div>
         <ThemeToggle />
       <main>{children}</main>
-
+      <div className={utilStyles.bottomball}></div>
       <footer className={utilStyles.footer}>
-        <p>Sarah Bakir 2021</p>
+        <span>Sarah Bakir 2021</span>
       </footer>
+      <div className={utilStyles.bottomballright}></div>
       {!home && (
           <div className={utilStyles.arrowright}>
             {<br />}
