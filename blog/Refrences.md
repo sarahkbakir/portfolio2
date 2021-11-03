@@ -5,8 +5,7 @@ skills: 'Links, books and practicing tips'
 ---
 -  **Exploring The world of Front end development**
 
-**Learning path**
-  --- 
+## **Learning path**
 
 I started my learning journey last year. I began practicing basic coding fundamentals through courses, then my Front-End Development interest became more and more everyday. I'm a step away from becoming a professional Front-End Developer, But I'm proud of what I achieved so far.
 
@@ -14,8 +13,7 @@ I started from scratch and I think resources and steps I took can be helpful to 
 
 There are some resources that helped me and others I knew about later but still would be very helpful to others during their learning journey.
 
-**Learning Resources and Refrences**
-  --- 
+## **Learning Resources and Refrences**
 
 - **JavaScript** :
   - [Javascript official](https://www.javascript.com/)
@@ -64,14 +62,14 @@ There are some resources that helped me and others I knew about later but still 
   - [Vercel Documentation](https://vercel.com/docs/concepts)
 
 
-**Problem solving**
-  --- 
+## **Problem solving**
 
 I love problem solving time, and unless I manage to make time limits for myself, I can spend everyday all day solving problems on platforms and learning tricks, ideas, concepts and methods. It's very challenging and rewarding. I would reccomend though starting with beginner level problems and leveling up rather than just going random because as a beginner failing at solving problems will be very disappointing.
 
-I found a couple of lists of **Problem Solving** websites, tried some of them and would happily reccomend some of which I loved, found very entertaining and helpful.
+I found a couple of lists of Problem Solving websites, tried some of them and would happily reccomend some of which I loved, found very entertaining and helpful.
 
-- Problem Solving:
+- **Problem Solving** :
+
   - [CodeWars](https://www.codewars.com)
   - [Leetcode](https://www.Leetcode.com)
   - [Hackerrank](https://www.Hackerrank.com)

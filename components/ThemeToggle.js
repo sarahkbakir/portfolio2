@@ -58,6 +58,7 @@ const ThemeToggle = () => {
     useEffect(() => {
         document.body.dataset.theme = activeTheme;
       }, [activeTheme]);
+
       useEffect(() => {
         const savedTheme = window.localStorage.getItem("theme");
         savedTheme && setActiveTheme(savedTheme);
@@ -70,12 +71,13 @@ const ThemeToggle = () => {
 
 
   return (
+
     <ToggleButton type="button" onClick={() => setActiveTheme(inactiveTheme)} aria-label={`Change to ${inactiveTheme} mode`}
     title={`Change to ${inactiveTheme} mode`}>
       <ToggleThumb activeTheme={activeTheme} />
 
            <span  aria-hidden={true}>   <svg
-          onClick={() => setTheme("light")}
+          
           xmlns="http://www.w3.org/2000/svg"
           className={UtilStyles.svg}
           fill="none"
@@ -91,9 +93,9 @@ const ThemeToggle = () => {
         </svg> </span>
         <span aria-hidden={true}>
         <svg
-          onClick={() => setTheme("dark")}
+          
           xmlns="http://www.w3.org/2000/svg"
-                    className={UtilStyles.svg}
+          className={UtilStyles.svg}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

@@ -23,12 +23,12 @@ export default function Post({ postData }) {
         </article>
         
           {<br/>}
-          <div className={utilStyles.arrowleft}>
+          {/* <div className={utilStyles.arrowleft}>
             {<br />}
             <Link href="/Blog">
               <a> Back </a>
             </Link>
-          </div>
+          </div> */}
       </Layout>
     )
   }

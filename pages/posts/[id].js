@@ -24,12 +24,12 @@ export default function Post({ postData }) {
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
           {<br/>}
-          <div className={utilStyles.arrowleft}>
+          {/* <div className={utilStyles.arrowleft}>
             {<br />}
             <Link href="/certificates">
               <a> Back </a>
             </Link>
-          </div>
+          </div> */}
       </Layout>
     )
   }

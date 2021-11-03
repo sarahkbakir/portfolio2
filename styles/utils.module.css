@@ -56,6 +56,7 @@
 
   .arrowleft ,.arrowright{
     text-align: center;
+    color: var(--color-headers-bg);
   }
 
 
@@ -70,5 +71,14 @@ padding: 0rem;
 
 .footer p {
   text-align: center;
-  padding: 0.5rem;
+  padding: -0.5rem;
+  }
+  .svg{
+    width: 1rem;
+    display: inline;
+  }
+
+  .heroimage{
+    background-color:tomato ;
+    padding: 2rem;
   }
